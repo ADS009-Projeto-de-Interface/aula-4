@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ADS009 - Projeto de Interface">
+  <meta name="author" content="24114290137 - Sérgio Silva">
+
+  <!-- Chamando Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Chamando CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- Chamando Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Chamando Biblioteca de Ícones Material Design -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Colocando Favicon na página-->
+  <link rel="shortcut icon" href="./img/logo-iesb.png" type="image/x-icon">
+
+  <title>ADS009 - Projeto de Interface | Aula 3 > Atividade 03</title>
+
+  <style>
+    /* Chamando estilos internos para exemplificar o uso de CSS */
+    .box-espacamento{
+      height:485px;
+    }
+
+  </style>
+
+</head>
+
+<body>
+  <!-- MENU PRINCIPAL -->
+  <nav class="navbar navbar-expand-lg bd-navbar bg-magenta sticky-top p-3">
+    <a class="navbar-brand text-light" href="#">ADS009</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Conceitos
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pages/frontend.html">Frontend</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="pages/html.html">HTML</a></li>
+            <li><a class="dropdown-item" href="pages/css.html">CSS</a></li>
+            <li>
+              <a class="dropdown-item" href="pages/forms.html">
+                Formulários
+                <span
+                  class="position-absolute  start-75 ms-5 text-dark translate-middle badge rounded-pill bg-warning fw-light">
+                  novo
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+  
+            </li>
+            <li><a class="dropdown-item disabled" href="#">Bootstrap</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item disabled" href="#">Javascript</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item disabled" href="#">NodeJS</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li>
+              <a class="dropdown-item disabled position-relative" aria-disabled="true">
+                UI Design
+                <span class="position-absolute start-75 ms-5 translate-middle badge rounded-pill bg-primary fw-light">
+                  em breve
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled position-relative text-light" aria-disabled="true" style="--bs-text-opacity: .5;">
+            React Native
+            <span class="position-absolute start-100 ms-4 translate-middle badge rounded-pill bg-success fw-light">
+              em breve
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <!--  ATIVIDADE 04 -->
+    <!-- -->
+    <!-- Nesta atividade vocês deverão criar uma página .index com um menu com link para 4 páginas. -->
+
+    <!-- [ ] O index e menu podem ser realizados da forma que preferir; -->
+    <!-- [ ] Cada página deve ter no mínimo 10 parâmetros de texto no CSS. -->
+    <!-- [ ] Aplicar em todo projeto no mínimo 5 imagens. -->
+    <!-- [ ] Todas as páginas devem ter cor de Background diferentes. -->
+
+    <!-- [ ] Vocês devem enviar: 5 arquivos html, 5 imagens, 1 arquivo CSS. -->
+
+    <!-- [ ] Não enviar pasta compactada. -->
+    <!-- [ ] Não utilizar Lorem Ipsum. -->
+    <!-- [ ] Colocar os créditos das mídias abaixo das mesmas. */ -->
+
+    <div class="row container-fluid conteudo-principal">
+      <div class="col-sm-6 mt-2">
+        <div class="card p-5">
+          <h1><a href="pages/frontend.html"  alt="Página com conteúdo Frontend">Frontend</a></h1>
+          <!--  Conceito de Frontend -->
+          <p class="card-text mb-5"><b>Frontend</b> refere-se à parte de um sistema ou aplicação que <i>os usuários interagem
+              diretamente</i>. É a <u>interface visível e interativa</u> através da qual os usuários interagem com um
+            site, aplicativo ou software. O desenvolvimento frontend envolve a criação e implementação de elementos
+            visuais, como layouts, botões, menus e outros componentes gráficos, bem como a programação que permite a
+            interatividade do usuário. Os desenvolvedores frontend utilizam linguagens de marcação, como HTML,
+            estilização com CSS e programação com JavaScript para criar uma experiência de usuário atraente e funcional.
+            Essa camada do desenvolvimento é crucial para proporcionar uma interface intuitiva e responsiva, garantindo
+            uma interação suave e eficiente entre os usuários e a aplicação.</p>
+
+          <h2><a href="./pages/html.html" alt="Página com conteúdo HTML5">HTML5</a></h2>
+          <!--  Conceito de HTML5 -->
+          <p class="card-text mb-5"><b>HTML5</b> <i>(Hypertext Markup Language 5)</i> é a quinta versão do padrão HTML, que é
+            a <u>linguagem de marcação</u> fundamental para a construção de páginas web. Lançado em outubro de 2014, o
+            HTML5 trouxe consigo uma série de recursos e melhorias em relação às versões anteriores. Entre suas
+            principais características, estão novas tags que facilitam a estruturação do conteúdo, suporte nativo para
+            áudio e vídeo, elementos de formulário mais avançados, APIs para interação com dispositivos e armazenamento
+            local, além de oferecer melhor suporte para gráficos e animações. O HTML5 desempenhou um papel significativo
+            na promoção de uma web mais rica em recursos, acessível e compatível com uma variedade de dispositivos e
+            navegadores. Ele continua a ser amplamente adotado na criação de páginas web modernas e responsivas.</p>
+
+          <h3><a href="../aula-2/pages/css.html" alt="Página com conteúdo CSS3">CSS3</a></h3>
+          <!--  Conceito de Folha de Estilo em Cascata -->
+          <p class="card-text mb-5"><b>CSS3</b> <i>(Cascading Style Sheets 3)</i>é a terceira versão da linguagem de estilo
+            utilizada para <u>controlar a apresentação visual de documentos</u> HTML e XML. CSS descreve como os
+            elementos HTML devem ser exibidos na tela, permitindo o controle de layout, cores, fontes, espaçamento e
+            outros aspectos visuais de uma página web. CSS3, introduzido em 1999, trouxe uma série de novos recursos e
+            aprimoramentos em relação às versões anteriores. Algumas das características notáveis incluem seletores
+            avançados, animações, sombras, gradientes, bordas arredondadas, transições e transformações. Esses recursos
+            permitem aos desenvolvedores criar designs mais complexos e interativos sem depender tanto de imagens ou
+            scripts adicionais. CSS3 é amplamente utilizado na criação de layouts modernos e responsivos para páginas
+            web.</p>
+
+          <h4><a href="#" class="text-secondary" alt="Página com conteúdo Javascript">Javascript 6+</a></h4>
+          <!--  Conceito de Javascript -->
+          <p class="card-text pb-1"><b>JavaScript</b> é uma linguagem de programação de alto nível, interpretada e
+            orientada a objetos. Originalmente desenvolvida para ser executada nos navegadores web, JavaScript tornou-se
+            uma parte fundamental do desenvolvimento web moderno, permitindo interatividade dinâmica e manipulação de
+            conteúdo em páginas web. Essa linguagem é <u>utilizada para criar elementos interativos, validar
+              formulários, criar animações, fazer requisições assíncronas (AJAX) para atualizações de dados em segundo
+              plano</u>, entre outras funcionalidades.</p>
+        </div>
+      </div>
+
+      <div class="col-sm-6 mt-2">
+        <div class="card p-5">
+          <h1>Código Javascript</h1>
+          <!--  Demonstração de Código Javascript -->
+          <code>
+              function draw() {
+                ctx.clearRect(0, 0, WIDTH, HEIGHT);
+                for (var i = 0; i < 100; i++) {
+                  ctx.beginPath();
+                  ctx.fillStyle = "rgba(255,0,0,0.5)";
+                  ctx.arc(random(WIDTH), random(HEIGHT), random(50), 0, 2 * Math.PI);
+                  ctx.fill();
+                }
+              }                          
+            </code>
+          <br />
+
+          <!--  Listas Ordenadas e Não Ordenadas -->
+          <h2>Propriedades CSS</h2>
+          <h3>Atributos de Seletores</h3>
+          <ul class="css-seletores">
+            <li><code>a[title]</code></li>
+            <li><code>a[href="https://example.org"]</code></li>
+            <li><code>a[href*="example"]</code></li>
+            <li><code>a[href$=".org" i]</code></li>
+            <li><code>a[class~="logo"]</code></li>
+            <li><code>a[href*="example"]</code></li>
+          </ul>
+
+          <hr />
+
+          <h3>Propriedades de Background</h3>
+          <ul class="css-background">
+            <li><code>background-attachment</code></li>
+            <li><code>background-clip</code></li>
+            <li><code>background-color</code></li>
+            <li><code>background-image</code></li>
+            <li><code>background-origin</code></li>
+            <li><code>background-position</code></li>
+            <li><code>background-repeat</code></li>
+            <li><code>background-size</code></li>
+          </ul>
+
+          <hr />
+
+          <h3>Pseudo-Classes</h3>
+          <ul class="css-pseudo-classes">
+            <li><code>:active</code></li>
+            <li><code>:active</code></li>
+            <li><code>:checked</code></li>
+            <li><code>:disable</code></li>
+            <li><code>:empty</code></li>
+            <li><code>:first</code></li>
+          </ul>
+
+          <hr />
+
+          <h3>CSS Layout</h3>
+          <ol>
+            <li>
+              <pre>Normal Flow</pre>
+            </li>
+            <li>
+              <pre>Flexbox</pre>
+            </li>
+            <li>
+              <pre>Grid</pre>
+            </li>
+            <li>
+              <pre>Float</pre>
+            </li>
+            <li>
+              <pre>Positioning</pre>
+            </li>
+          </ol>
+
+          <div class="box-espacamento"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center">
+    <!-- Grid container -->
+    <div class="container p-4"></div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center fw-light p-3" style="background-color: rgba(0, 0, 0, 0.05);">
+        © OADSNM1AB-ADS009-20241 - Projeto de Interface | IESB OESTE:
+        <a class="text-body" href="https://classroom.google.com/c/NjU2ODc1Njk5NTI2" target="_blank">Google
+            Classroom</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+  <!-- Chamandas Scripts Bootstrap 5.3.3 -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>
